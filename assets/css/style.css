@@ -1,0 +1,33 @@
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-size: 18px;
+ }
+
+ .container{
+  padding: 2rem 0;
+ }
+ .banner {
+   padding: 2rem 0;
+   display: flex;
+   align-items: center;
+ }
+
+ .estatisticas {
+   padding: 1rem 0;
+   background: rgba(11, 106, 196, 0.918);
+ }
+
+ .sobre{
+  background:#f3f3f3;
+ }
+ @media (min-width: 992px) {
+   .banner {
+     height: 75vh;
+   }
+
+   .estatisticas {
+     height: 15vh;
+   }
+ }
