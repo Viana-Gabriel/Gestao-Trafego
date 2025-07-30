@@ -14,8 +14,11 @@
     <section class="banner">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-lg-6 text-center text-lg-end">
-            <img src="" alt="Logo aqui">
+          <div
+            class="col-12 col-lg-6 d-flex flex-column align-items-center align-items-lg-end gap-2 text-center text-lg-end">
+            <div class="w-50">
+              <img src="./assets/img/logo-preta.png" alt="Logo aqui" class="w-100">
+            </div>
             <div>
               <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda expedita earum unde similique,iusto
@@ -27,17 +30,27 @@
       </div>
     </section>
     <section class="estatisticas">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-3 estatisticas_card text-center"></div>
+          <div class="col-3 estatisticas_card text-center"></div>
+          <div class="col-3 estatisticas_card text-center"></div>
+          <div class="col-3 estatisticas_card text-center"></div>
+        </div>
+      </div>
+
     </section>
     <section class="servicos">
       <div class="container">
         <div class="row text-center my-4">
-          <h2>Nossos Serviçoes</h2>
+          <h2 class="text-uppercase">Nossos Serviços</h2>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-between">
           <div class="col-12 col-lg-5 text-center">
-            <div class="my-4">
-              <h3 class="h3">Nome do servico</h3>
-              <h4 class="h4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </h4>
+            <div class="mb-5 servicos_cabecalho">
+              <h3 class="h4">Anúncios Online</h3>
+              <h4 class="h5"> Converta cliques em clientes com estratégia certeira.</h4>
+              <img src="https://img.icons8.com/?size=50&id=86005&format=png&color=0b6bc4" alt="">
             </div>
             <ul class="list-unstyled">
               <li class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
@@ -48,9 +61,10 @@
             <button class="btn btn-primary px-5 py-2 my-4"> Quero saber mais </button>
           </div>
           <div class="col-12 col-lg-5 text-center">
-            <div class="my-4">
-              <h3 class="h3">Nome do servico</h3>
-              <h4 class="h4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </h4>
+            <div class="mb-5 servicos_cabecalho">
+              <h3 class="h4">Consultoria Personalizada</h3>
+              <h4 class="h5"> Estratégias exclusivas que transformam seu negócio online.</h4>
+              <img src="https://img.icons8.com/?size=50&id=99zZEnk4txdI&format=png&color=0b6bc4" alt="">
             </div>
             <ul class="list-unstyled">
               <li class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
@@ -87,15 +101,12 @@
     <section class="py-5">
       <div class="container">
         <div class="row justify-content-between">
-          <!-- Coluna esquerda: Logo + título + texto -->
           <div class="col-12 col-lg-5 text-center text-lg-end mb-4 mb-lg-0">
-            <img src="logo.png" alt="Logo" class="mb-3" style="max-width: 200px;">
+            <img src="./assets/img/logo-preta.png" alt="Logo" class="mb-3 w-50">
             <h2 class="fw-bold">FALE COM NOSSA EQUIPE</h2>
             <p class="text-muted">Entre em contato para receber mais informações e tirar suas dúvidas sobre nossos
               serviços.</p>
           </div>
-
-          <!-- Coluna direita: Formulário -->
           <div class="col-12 col-lg-6">
             <form>
               <div class="mb-3">
@@ -149,6 +160,10 @@
         </div>
       </div>
     </section>
+
+    <a href="https://wa.me/5511975099618" class="whatsapp-button" target="_blank" aria-label="Fale conosco no WhatsApp">
+      <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp">
+    </a>
   </main>
   <footer>
 

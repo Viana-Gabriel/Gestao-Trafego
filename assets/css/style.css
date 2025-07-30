@@ -1,33 +1,116 @@
- * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-   font-size: 18px;
- }
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
- .container{
+* {
+  font-family: 'Roboto';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+.row {
+  margin: 0;
+}
+
+.container {
+  padding: 3.5rem 0;
+}
+
+.banner {
   padding: 2rem 0;
- }
- .banner {
-   padding: 2rem 0;
-   display: flex;
-   align-items: center;
- }
+  display: flex;
+  align-items: center;
+  position: relative;
+}
 
- .estatisticas {
-   padding: 1rem 0;
-   background: rgba(11, 106, 196, 0.918);
- }
+.estatisticas {
+  padding: 1rem 0;
+  background: rgba(11, 106, 196, 0.918);
+  margin: 0 auto;
+}
 
- .sobre{
-  background:#f3f3f3;
- }
- @media (min-width: 992px) {
-   .banner {
-     height: 75vh;
-   }
+.estatisticas .container {
+  padding: 0;
+}
 
-   .estatisticas {
-     height: 15vh;
-   }
- }
+.estatisticas_card {
+  color:  #f3f3f3;
+
+}
+
+
+.servicos {
+  background: #f8fafd;
+}
+
+.servicos_cabecalho {
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid rgb(11, 107, 196);
+  padding: 2rem 1rem;
+  box-shadow: 0 6px 10px rgba(10, 99, 182, 0.25);
+  background-color: #f8faff;
+  transition: all 0.3s ease;
+
+}
+
+.servicos_cabecalho:hover {
+
+  transform: translateY(-8px);
+}
+
+.servicos_cabecalho img {
+  padding: 12px;
+  background: #f8fafd;
+  position: absolute;
+  border-radius: 100%;
+  bottom: -25%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid rgb(11, 107, 196);
+
+}
+
+.servicos_cabecalho .h4 {
+  color: rgba(11, 106, 196, 0.918);
+}
+
+.servicos_cabecalho .h5 {
+  font-size: 22px;
+  font-weight: 500;
+  color: rgb(99, 99, 99);
+}
+
+
+.sobre {
+  background: linear-gradient(to right, #fff, #f3f3f3, #d1d1d1);
+
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  z-index: 999;
+  background-color: #25d366;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1);
+}
+
+@media (min-width: 992px) {
+
+  .banner {
+    padding: 3rem 0;
+    background: url('../img/image-banner-2.png') no-repeat;
+    background-size: contain;
+    background-position: 80% center;
+  }
+
+
+}
