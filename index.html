@@ -24,7 +24,9 @@
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda expedita earum unde similique,iusto
                 corrupti nam aut consequatur omnis excepturi. Minima!</p>
             </div>
-            <button class="btn btn-primary px-5 py-2">Fale com um especialista</button>
+            <a href="https://wa.me/5511975099618" target="_blank" aria-label="Fale conosco no WhatsApp">
+              <button class="btn btn-primary px-5 py-2">Fale com um especialista</button>
+            </a>
           </div>
         </div>
       </div>
@@ -58,7 +60,10 @@
               <li class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
               <li class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
             </ul>
-            <button class="btn btn-primary px-5 py-2 my-4"> Quero saber mais </button>
+            <a href="https://wa.me/5511975099618" target="_blank" aria-label="Fale conosco no WhatsApp">
+              <button class="btn btn-primary px-5 py-2 my-4"> Quero saber mais </button>
+            </a>
+
           </div>
           <div class="col-12 col-lg-5 text-center">
             <div class="mb-5 servicos_cabecalho">
@@ -72,7 +77,9 @@
               <li class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
               <li class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
             </ul>
-            <button class="btn btn-primary px-5 py-2 my-4"> Quero saber mais </button>
+            <a href="https://wa.me/5511975099618" target="_blank" aria-label="Fale conosco no WhatsApp">
+              <button class="btn btn-primary px-5 py-2 my-4"> Quero saber mais </button>
+            </a>
           </div>
         </div>
       </div>
@@ -90,7 +97,10 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto itaque assumenda perferendis quos,
               nostrum animi nam totam officiis, incidunt atque dicta necessitatibus!</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ducimus est voluptate.</p>
-            <button class="btn btn-primary px-5 py-2">Fale com um especialista</button>
+            <a href="https://wa.me/5511975099618" target="_blank" aria-label="Fale conosco no WhatsApp">
+              <button class="btn btn-primary px-5 py-2">Fale com um especialista</button>
+            </a>
+
           </div>
           <div class="col-12 col-lg-6">
             <img src="" alt="imagem">
@@ -108,26 +118,28 @@
               serviços.</p>
           </div>
           <div class="col-12 col-lg-6">
-            <form>
+            <form id="contato-form">
               <div class="mb-3">
                 <label for="nome" class="form-label">Nome</label>
-                <input type="text" class="form-control border-primary" id="nome" placeholder="Digite seu nome">
+                <input type="text" name="nome" class="form-control border-primary" id="nome"
+                  placeholder="Digite seu nome">
               </div>
 
               <div class="mb-3">
                 <label for="email" class="form-label">E-mail</label>
-                <input type="email" class="form-control border-primary" id="email" placeholder="Digite seu e-mail">
+                <input type="email" name="email" class="form-control border-primary" id="email"
+                  placeholder="Digite seu e-mail">
               </div>
 
               <div class="mb-3">
                 <label for="telefone" class="form-label">Telefone</label>
-                <input type="tel" class="form-control border-primary" id="telefone"
+                <input type="tel" name="telefone" class="form-control border-primary" id="telefone"
                   placeholder="Digite seu número de celular">
               </div>
 
               <div class="mb-3">
                 <label for="investimento" class="form-label">Faixa de Investimento</label>
-                <select class="form-select border-primary" id="investimento">
+                <select name="investimento" class="form-select border-primary" id="investimento">
                   <option selected>Selecione uma opção</option>
                   <option>Até R$2.000</option>
                   <option>Entre R$2.000 e R$5.000</option>
@@ -137,7 +149,7 @@
 
               <div class="mb-3">
                 <label for="colaboradores" class="form-label">Equipe Atual</label>
-                <select class="form-select border-primary" id="colaboradores">
+                <select name="colaboradores" class="form-select border-primary" id="colaboradores">
                   <option selected>Selecione uma opção</option>
                   <option>Trabalho sozinho</option>
                   <option>Até 5 pessoas</option>
@@ -147,10 +159,10 @@
 
               <div class="mb-3">
                 <label for="mensagem" class="form-label">Mensagem</label>
-                <textarea class="form-control border-primary" id="mensagem" rows="4"
+                <textarea name="mensagem" class="form-control border-primary" id="mensagem" rows="4"
                   placeholder="Escreva aqui sua dúvida ou sugestão"></textarea>
               </div>
-
+              <input type="hidden" name="date" id="date">
               <div class="d-grid">
                 <button type="submit" class="btn btn-primary">Enviar</button>
               </div>
@@ -171,6 +183,28 @@
 
   <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="./assets/js/main.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("ex7DC29ew0qKXZTCP");
+    })();
+
+    document.getElementById('contato-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      document.getElementById("date").value = new Date().toLocaleString("pt-BR");
+
+      emailjs.sendForm('service_i04uis8', 'template_zg7quuo', this)
+        .then(() => {
+          alert('Mensagem enviada com sucesso!');
+          this.reset();
+        }, (error) => {
+          alert('Erro ao enviar o formulário. Tente novamente.');
+          console.error(error);
+        });
+    });
+  </script>
+
 
 
 </body>
