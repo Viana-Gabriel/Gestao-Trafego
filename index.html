@@ -31,34 +31,45 @@
         </div>
       </div>
     </section>
-    <section class="estatisticas">
-      <div class="container">
-        <div class="row justify-content-between align-items-center">
-          <div class="col-3 estatisticas_card text-center"></div>
-          <div class="col-3 estatisticas_card text-center"></div>
-          <div class="col-3 estatisticas_card text-center"></div>
-          <div class="col-3 estatisticas_card text-center"></div>
-        </div>
+   <section class="estatisticas py-4">
+  <div class="container">
+    <div class="row justify-content-between align-items-center text-center">
+      <div class="col-12 col-md-3 estatisticas_card mb-4 mb-md-0">
+        <h2 class="h2">+ de 500</h2>
+        <p class="">Projetos Concluídos</p>
       </div>
-
-    </section>
+      <div class="col-12 col-md-3 estatisticas_card mb-4 mb-md-0">
+        <h2 class="h2">98%</h2>
+        <p class="">Clientes Satisfeitos</p>
+      </div>
+      <div class="col-12 col-md-3 estatisticas_card mb-4 mb-md-0">
+        <h2 class="h2">12</h2>
+        <p class="">Estados Atendidos</p>
+      </div>
+      <div class="col-12 col-md-3 estatisticas_card">
+        <h2 class="h2">+ de 800h</h2>
+        <p class="">Consultorias Realizadas</p>
+      </div>
+    </div>
+  </div>
+</section>
     <section class="servicos">
       <div class="container">
-        <div class="row text-center my-4">
-          <h2 class="text-uppercase">Nossos Serviços</h2>
+        <div class="row text-center my-4 ">
+          <h2 class="text-uppercase mb-5 title_section">Nossos Serviços</h2>
         </div>
         <div class="row justify-content-between">
           <div class="col-12 col-lg-5 text-center">
             <div class="mb-5 servicos_cabecalho">
-              <h3 class="h4">Anúncios Online</h3>
+              <h3 class="h4 ">Anúncios Online</h3>
               <h4 class="h5"> Converta cliques em clientes com estratégia certeira.</h4>
               <img src="https://img.icons8.com/?size=50&id=86005&format=png&color=0b6bc4" alt="">
             </div>
-            <ul class="list-unstyled">
-              <li class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-              <li class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-              <li class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-              <li class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <ul class="list-unstyled text-start">
+              <li class="my-4">- Alcance o público certo com campanhas bem planejadas.</li>
+              <li class="my-4">- Aumente suas vendas com anúncios segmentados online.</li>
+              <li class="my-4">- Obtenha resultados reais com estratégias de tráfego pago.</li>
+              <li class="my-4">- Transforme cliques em vendas com foco em conversão.</li>
             </ul>
             <a href="https://wa.me/5511975099618" target="_blank" aria-label="Fale conosco no WhatsApp">
               <button class="btn btn-primary px-5 py-2 my-4"> Quero saber mais </button>
@@ -71,11 +82,11 @@
               <h4 class="h5"> Estratégias exclusivas que transformam seu negócio online.</h4>
               <img src="https://img.icons8.com/?size=50&id=99zZEnk4txdI&format=png&color=0b6bc4" alt="">
             </div>
-            <ul class="list-unstyled">
-              <li class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-              <li class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-              <li class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-              <li class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <ul class="list-unstyled text-start">
+              <li class="my-4">- Analisamos seu negócio para criar soluções específicas.</li>
+              <li class="my-4">- Desenvolvemos planos que atendem seus reais objetivos.</li>
+              <li class="my-4">- Oferecemos suporte estratégico para decisões mais assertivas.</li>
+              <li class="my-4">- Ajudamos sua empresa a crescer com marketing inteligente.</li>
             </ul>
             <a href="https://wa.me/5511975099618" target="_blank" aria-label="Fale conosco no WhatsApp">
               <button class="btn btn-primary px-5 py-2 my-4"> Quero saber mais </button>
@@ -84,9 +95,51 @@
         </div>
       </div>
     </section>
-    <section class="sobre">
+    <section class="projetos">
       <div class="container">
         <div class="row">
+          <div id="carouselProjetos" class="carousel slide " data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/img/mulher-sorridente-falando-ao-telefone-tiro-medio.jpg" class="d-block w-100"
+                  alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/mulher-sorridente-falando-ao-telefone-tiro-medio.jpg" class="d-block w-100"
+                  alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/mulher-sorridente-falando-ao-telefone-tiro-medio.jpg" class="d-block w-100"
+                  alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjetos" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProjetos" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sobre">
+      <div class="container">
+        <div class="row flex-row-reverse flex-lg-row">
+          <div class="col-12 d-lg-none mb-4 position-relative">
+            <div class=""></div>
+            <img src="./assets/img/sobre.png" alt="imagem" class="w-100">
+          </div>
           <div class="col-12 col-lg-6">
             <h2 class="h2">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio aliquam alias vel voluptas nobis eius
@@ -100,10 +153,6 @@
             <a href="https://wa.me/5511975099618" target="_blank" aria-label="Fale conosco no WhatsApp">
               <button class="btn btn-primary px-5 py-2">Fale com um especialista</button>
             </a>
-
-          </div>
-          <div class="col-12 col-lg-6">
-            <img src="" alt="imagem">
           </div>
         </div>
       </div>
@@ -173,7 +222,8 @@
       </div>
     </section>
 
-    <a href="https://wa.me/5511975099618" class="whatsapp-button" target="_blank" aria-label="Fale conosco no WhatsApp">
+    <a href="https://wa.me/5511975099618" class="whatsapp-button " target="_blank"
+      aria-label="Fale conosco no WhatsApp">
       <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp">
     </a>
   </main>
@@ -183,27 +233,10 @@
 
   <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="./assets/js/main.js"></script>
+  <script src="https://unpkg.com/imask"></script>
+  <script src="./assets/js/mascara.js"></script>
+
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script>
-    (function () {
-      emailjs.init("ex7DC29ew0qKXZTCP");
-    })();
-
-    document.getElementById('contato-form').addEventListener('submit', function (e) {
-      e.preventDefault();
-
-      document.getElementById("date").value = new Date().toLocaleString("pt-BR");
-
-      emailjs.sendForm('service_i04uis8', 'template_zg7quuo', this)
-        .then(() => {
-          alert('Mensagem enviada com sucesso!');
-          this.reset();
-        }, (error) => {
-          alert('Erro ao enviar o formulário. Tente novamente.');
-          console.error(error);
-        });
-    });
-  </script>
 
 
 
