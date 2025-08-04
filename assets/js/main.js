@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.getElementById("date").value = new Date().toLocaleString("pt-BR");
 
-    emailjs.sendForm('service_i04uis8', 'template_zg7quuo', this)
+    emailjs.sendForm('service_iu0eyrl', 'template_zg7quuo', this)
       .then(() => {
         alert('Mensagem enviada com sucesso!');
         this.reset();

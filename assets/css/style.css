@@ -7,7 +7,6 @@
   box-sizing: border-box;
   font-size: 18px;
 }
-
 .row {
   margin: 0;
 }
@@ -67,7 +66,8 @@
 
 .servicos{
   background: url('../img/background-2.png') no-repeat;
-
+  background-position:  center;
+  
 }
 
 .servicos_cabecalho {
